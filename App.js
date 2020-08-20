@@ -32,7 +32,7 @@ constructor(){
 setModalVisible(visible,image){
 this.setState({modalVisible:visible,modalImage:image})
 }
-  renderImages = item => {
+  renderImages =(item)=> {
 console.log(item);
     return (
       <AnimatedImages imageIndex={item.index}>
@@ -52,7 +52,7 @@ console.log(item);
     
     return (
  <View style={{flex:1}}>
-   <Header centerComponent={{text:"Photos"}}/>
+   <Header centerComponent={{text:"Photo Gallery",style:{fontSize:40,fontWeight:"bold",fontStyle:"italic",color:"blue"}}} backgroundColor="#eb3453"/>
           <FlatList
             horizontal={false}
             numColumns={4}
